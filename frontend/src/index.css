@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+.img-container {
+  margin-left: 200px;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.item-container {
+  margin-right: 200px;
+}
+
+.nav-link:hover {
+  color: blue !important;
+}
+
+.socials {
+  color: black; /* Makes icon black */
+
+  transition: color 0.3s ease;
+}
+
+.socials:hover {
+  color: #555; /* Optional: slightly lighter on hover */
+}
+
+.links a {
+  color: #555;
+  text-decoration: none; /* Makes icon black */
+  display: inline-block; /* ensures margin works */
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.links a:hover {
+  color:  blue; /* Optional: slightly lighter on hover */
+}
+
+.comments {
+  font-size: 10px;
+  font-family: serif;
+   word-spacing: 2px;     
+  line-height: 1.8;      
+  font-size: 12px;  
+}
+
+.nav-content {
+  font-size: 13px;
+  height:10px
+}
+.container-nav {
+  background-color: rgb(251, 251, 251);
+  min-width: 100vw;;
+}
