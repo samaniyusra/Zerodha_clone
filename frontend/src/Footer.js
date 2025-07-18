@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css"
 function Footer() {
     return (
-        <div className="container fs-8  border-top p-5 container-nav">
+        <div className="container fs-8  border-top p-5 container-nav lh-lg">
             <div className="row">
                 <div className="col-lg-3 col-md-8 col-sm-12 p-5 ">
                     <img src="/media/images/logo.svg" style={{ width: "60%" }} className="mb-3" />

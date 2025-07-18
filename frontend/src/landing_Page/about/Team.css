@@ -1,0 +1,21 @@
+.team-container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team-photo {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-name {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.team-role {
+  color: #666;
+  font-size: 14px;
+}

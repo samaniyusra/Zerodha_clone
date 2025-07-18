@@ -70,3 +70,7 @@ code {
   background-color: rgb(251, 251, 251);
   min-width: 100vw;;
 }
+
+.about-container {
+  height: 72px;
+}
