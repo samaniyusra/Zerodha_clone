@@ -1,5 +1,5 @@
 import React from "react";
-import "./Universe.css";
+
 
 function Universe() {
     return (

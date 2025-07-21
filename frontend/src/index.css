@@ -75,3 +75,24 @@ code {
   height: 72px;
 }
 
+#supportHero {
+  background-color: rgb(56, 126,209);
+  color: white;
+ 
+}
+
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#supportWrapper a {
+ color: aliceblue;
+}
+
+#link a{
+  color: white
+}
+#supportRow {
+  margin-left: 120px
+}
