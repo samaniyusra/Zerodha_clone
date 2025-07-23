@@ -1,9 +1,17 @@
 import React from "react";
+<<<<<<< HEAD
 
 const Holdings = () => {
   return (
     <>
       <h3 className="title">Holdings (13)</h3>
+=======
+import { holdings } from "../data/data";
+const Holdings = () => {
+  return (
+    <>
+      <h3 className="title">Holdings ({holdings.length})</h3>
+>>>>>>> dashboard-dummydata
 
       <div className="order-table">
         <table>
@@ -17,6 +25,28 @@ const Holdings = () => {
             <th>Net chg.</th>
             <th>Day chg.</th>
           </tr>
+<<<<<<< HEAD
+=======
+          {holdings.map((stock, index) => {
+            const currVal = stock.price * stock.qty;
+            const isProfit = currVal - stock.avg * stock.qty >= 0.0;
+            const ProfClass = isProfit ? "profit" : "loss";
+            const dayClass = stock.isLoss ? "loss" : "profit";
+            return (
+              <tr key={index}>
+                <td>{stock.name} </td>
+                <td>{stock.qty} </td>
+                <td>{stock.avg.toFixed(2)}</td>
+                <td>{stock.price.toFixed(2)}</td>
+                <td>{currVal.toFixed(2)}</td>
+                <td className={ProfClass}>{(currVal - stock.avg * stock.qty).toFixed(2)}</td>
+                <td className= {ProfClass}>{stock.net}</td>
+                <td className= {dayClass}>{stock.day}</td>
+              </tr>
+            )
+
+          })}
+>>>>>>> dashboard-dummydata
         </table>
       </div>
 

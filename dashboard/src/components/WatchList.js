@@ -68,7 +68,11 @@ const WatchListActions = ({ uid }) => {
           arrow
           TransitionComponent={Grow}
         >
+<<<<<<< HEAD
           <button className="buy">Buy</button>
+=======
+          <button className="buy ">Buy</button>
+>>>>>>> dashboard-dummydata
         </Tooltip>
         <Tooltip
           title="Sell (S)"
