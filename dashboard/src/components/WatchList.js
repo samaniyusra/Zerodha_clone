@@ -5,6 +5,9 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import GeneralContext from "./GeneralContext.js";
+import { useContext } from "react";
+
 const WatchList = () => {
   return (
     <div className="watchlist-container">
@@ -58,6 +61,15 @@ const WatchListItem = ({ stock }) => {
 
 
 const WatchListActions = ({ uid }) => {
+  const generalContext = useContext(GeneralContext);
+
+  const handleBuyClick = () => {
+    generalContext.openBuyWindow(uid);
+  };
+
+  const handleSellClick = () => {
+    generalContext.openSellWindow(uid);
+  };
 
   return (
     <span className="actions" >
@@ -67,20 +79,18 @@ const WatchListActions = ({ uid }) => {
           placement="top"
           arrow
           TransitionComponent={Grow}
+           
         >
-<<<<<<< HEAD
-          <button className="buy">Buy</button>
-=======
-          <button className="buy ">Buy</button>
->>>>>>> dashboard-dummydata
+          <button className="buy "  onClick={handleBuyClick}>Buy</button>
         </Tooltip>
         <Tooltip
           title="Sell (S)"
           placement="top"
           arrow
           TransitionComponent={Grow}
+        
         >
-          <button className="sell">Sell</button>
+          <button className="sell"onClick={handleSellClick}>Sell</button>
         </Tooltip>
         <Tooltip
           title="Analytics (A)"
@@ -99,7 +109,7 @@ const WatchListActions = ({ uid }) => {
           TransitionComponent={Grow}
         >
           <button className="action">
-            <MoreHorizIcon className="icon" /> 
+            <MoreHorizIcon className="icon" />
           </button>
         </Tooltip>
       </span>

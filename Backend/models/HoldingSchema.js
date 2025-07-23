@@ -1,6 +1,7 @@
-const { Schema, default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
+const { Schema } = mongoose; 
 
-const HoldingSchema = new Schema({
+const HoldingSchema = Schema({
     name: String,
     qty: Number,
     avg: Number,
@@ -11,5 +12,5 @@ const HoldingSchema = new Schema({
 })
 
 
-const holding = new mongoose.model("holding", HoldingSchema);
+const holding = mongoose.model("holding", HoldingSchema);
 module.exports = { holding };
